@@ -37,6 +37,11 @@ const routes = [
     path: '/formatter',
     name: 'formatter',
     component: () => import('../views/Formatter.vue')
+  },
+  {
+    path: '/p5',
+    name: 'p5',
+    component: () => import('../views/p5.vue')
   }
   // {
   //   path: '/about',

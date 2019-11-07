@@ -11,6 +11,9 @@
       <li>
         <router-link to="/formatter">3. data formatter</router-link>
       </li>
+      <li>
+        <router-link to="/p5">4. p5</router-link>
+      </li>
     </ul>
     <h4>1. 可编辑 div, span</h4>
     <div
