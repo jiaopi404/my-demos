@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Leaflet from '../views/Leaflet.vue'
-import Canvas from '../views/Canvas.vue'
 import UploadFile from '../views/UploadFile.vue'
+import CanvasRouter from '../canvas/router'
 
 Vue.use(VueRouter)
 
@@ -22,11 +22,6 @@ const routes = [
     path: '/leaflet',
     name: 'leaflet',
     component: Leaflet
-  },
-  {
-    path: '/canvas',
-    name: 'canvas',
-    component: Canvas
   },
   {
     path: '/upload',
@@ -52,6 +47,8 @@ const routes = [
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // }
 ]
+
+routes.push(...CanvasRouter)
 
 const router = new VueRouter({
   mode: 'history',
